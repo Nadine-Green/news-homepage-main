@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  transition: 0.3s ease-in-out;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+nav ul {
+  list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+body {
+  background-color: hsl(36, 100%, 99%);
+  font-size: 15px;
+  font-family: "Inter";
+  padding: 1rem;
+}
+body #head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+body #head img {
+  margin-left: 1rem;
+}
+body #head #nav {
+  display: flex;
+  gap: 2rem;
+  margin-right: 1rem;
+}
+body #head #nav a {
+  color: hsl(236, 13%, 42%);
+}
+body #head #nav a:hover {
+  color: hsl(35, 77%, 62%);
+}
+body #head button {
+  display: none;
+}
+body #one {
+  display: flex;
+  gap: 2rem;
+  height: -moz-max-content;
+  height: max-content;
+}
+body #one #sectionOneFirstDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body #one #sectionOneFirstDiv #bright {
+  display: flex;
+  justify-content: space-between;
+}
+body #one #sectionOneFirstDiv #bright h1 {
+  color: hsl(240, 100%, 5%);
+  font-size: clamp(2em, 4vw, 3.5em);
+  font-weight: 900;
+  max-width: 20rem;
+}
+body #one #sectionOneFirstDiv #bright div p {
+  color: hsl(236, 13%, 42%);
+  max-width: 20rem;
+  margin-bottom: 5rem;
+  padding-top: 1rem;
+}
+body #one #sectionOneFirstDiv #bright div button {
+  padding: 0.7rem 2.5rem;
+  background-color: hsl(5, 85%, 63%);
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+body #one #sectionOneFirstDiv #bright div button:hover {
+  cursor: pointer;
+  background-color: hsl(240, 100%, 5%);
+}
+body #one #new {
+  background-color: hsl(240, 100%, 5%);
+  padding: 2rem 1.5rem 0rem 1.5rem;
+}
+body #one #new h1 {
+  color: hsl(35, 77%, 62%);
+  font-size: 2.5em;
+  font-weight: 900;
+}
+body #one #new .bigWhite {
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  font-weight: 900;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+body #one #new .bigWhite:hover {
+  color: hsl(35, 77%, 62%);
+}
+body #one #new .smallGrey {
+  color: hsl(233, 8%, 79%);
+  padding-bottom: 2rem;
+  border-bottom: 1px solid hsl(233, 8%, 79%);
+}
+body #one #new :last-child {
+  border: none;
+}
+body #two {
+  display: flex;
+  gap: 1rem;
+  margin: 5rem auto 2rem auto;
+  height: 11rem;
+  width: 95%;
+}
+body #two div {
+  display: flex;
+  gap: 1rem;
+}
+body #two div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body #two div div h1 {
+  color: hsl(233, 8%, 79%);
+  font-size: 2.7em;
+  font-weight: 700;
+}
+body #two div div .head-two {
+  color: hsl(240, 100%, 5%);
+  font-size: 1.3em;
+  font-weight: 900;
+}
+body #two div div .head-two:hover {
+  color: hsl(35, 77%, 62%);
+}
+body #two div div .head-two .head-three {
+  color: hsl(236, 13%, 42%);
+  line-height: 1.5rem;
+}
+
+@media screen and (min-width: 850px) and (max-width: 1200px) {
+  body #two div {
+    flex-direction: column;
+  }
+  body #two div img {
+    height: 20rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 850px) {
+  body #one {
+    flex-direction: column;
+  }
+  body #one #sectionOneFirstDiv #bright {
+    flex-direction: column;
+  }
+  body #one #sectionOneFirstDiv #bright h1 {
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  body #one #sectionOneFirstDiv #bright div p {
+    max-width: 35rem;
+  }
+  body #two {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    position: relative;
+  }
+  body #head #nav {
+    display: none;
+    z-index: 1;
+    color: white;
+  }
+  body #head button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+  }
+  body #head button #menu {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body #head button:hover {
+    cursor: pointer;
+  }
+  body #head #box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    height: 100vh;
+    width: 80%;
+  }
+  body #head #box #clone {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+  body #head #box #clone a {
+    color: black;
+  }
+  body #head #box #clone a:hover {
+    color: hsl(35, 77%, 62%);
+  }
+}
+@media screen and (max-width: 375px) {
+  body #two div {
+    flex-direction: column;
+  }
+  body #two div img {
+    height: 20rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
